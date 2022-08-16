@@ -9,7 +9,7 @@ public class HibernateUtil {
     static{
         Configuration config  =  new Configuration();
         config
-                .setProperty("hibernate.dialect","org.hibernate.dialect.MySQLDialect")
+                .setProperty("hibernate.dialect","org.hibernate.dialect.MySQL8Dialect")
                 .setProperty("hibernate.connection.driver_class","com.mysql.cj.jdbc.Driver")
                 .setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/demo")
                 .setProperty("hibernate.connection.username","root")

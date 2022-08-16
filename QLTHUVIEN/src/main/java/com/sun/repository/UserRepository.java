@@ -22,7 +22,7 @@ public class UserRepository {
             session = HibernateUtil.getSessionFactory().openSession();
             transaction = session.beginTransaction();
             // FROM
-            String hql = "FROM Users";
+            String hql = "FROM User";
             Query query = session.createQuery(hql);
             List results = query.list();
             for (Iterator iterator = results.iterator(); iterator.hasNext();){
