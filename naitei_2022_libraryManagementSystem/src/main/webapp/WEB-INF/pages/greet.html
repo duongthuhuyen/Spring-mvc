@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring MVC + Thymeleaf</title>
+</head>
+<body>
+<h1>Hello: Spring MVC + Thymeleaf</h1>
+<div th:if="${gret} != null">
+<p th:text="'message: ' + ${gret} + '!'" />
+</div>
+<div th:if="${pageContext.request.userPrincipal.email != null}">
+    <span th:text="${pageContext.request.userPrincipal.email}"></span>
+</div>
+</body>
+</html>
